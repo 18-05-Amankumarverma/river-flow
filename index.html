@@ -1,0 +1,187 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Song</title>
+    <style>
+        i{
+            margin-right:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="mainarea">
+            <div id="area">
+                <div id="a1">
+                    <div id="logo">
+                        <img src="logo.png" height="100%" width="150px" style="margin-left:60px;"/>
+                    </div>
+                    <div id="after-logo">
+                        <ul>
+                            <li><i class="fa  fa-home"></i>Home</li>
+                            <li><i class="fa  fa-link"></i>Library</li>
+                            <li><i class="fa  fa-sign-in"></i>Sign In</li>
+                            <li><i class="fa  fa-sign-out"></i>Sign Up</li>
+                        </ul>
+                        <div id="others"></div>
+                    </div>
+                </div>
+                <div id="a2">
+                    <div id="search-area"></div>
+                    <div id="playlist">Playlists</div>
+                    <div id="fullarea">
+                        <div id="fpl1">
+                            <div id="image">
+                                <img src="https://yt3.googleusercontent.com/uXXdud_2xBFAB-70PDt1EtvThP0jOoy6kZ--V0LEZ_zsz3vw5dzG6bHzrUdWhyf0WgLPBPnS=s900-c-k-c0x00ffffff-no-rj" height="100%" width="100%"/>
+                            </div>
+                            <div id="text">
+                                dinner with friends song
+                                <i class="songlist fa fa-3x fa-play-circle-o" style="float:right;margin-top:15px;" id="0"></i>
+                            </div>
+                        </div>
+                        <div id="fpl1">
+                            <div id="image">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2734f0d2e7ca8d89e39d1bcac37" height="100%" width="100%"/>
+                            </div>
+                            <div id="text">
+                                dinner with friends song
+                                <i class="songlist fa fa-3x fa-play-circle-o" style="float:right;margin-top:15px;" id="1"></i>
+                            </div>
+                        </div>
+                        <div id="fpl1">
+                            <div id="image">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27379bfa4a1649b0bd029d023d9" height="100%" width="100%"/>
+                            </div>
+                            <div id="text">
+                                dinner with friends song       
+                                <i class="songlist fa fa-3x fa-play-circle-o" style="float:right;margin-top:15px;" id="2"></i>
+
+                            </div>
+                        </div>
+                        <div id="fpl1">
+                            <div id="image">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273a24ce281e4b458eb83fa9c48" height="100%" width="100%"/>
+                            </div>
+                            <div id="text">
+                                dinner with friends song
+                                <i class="songlist fa fa-3x fa-play-circle-o" style="float:right;margin-top:15px;" id="3"></i>
+                            </div>
+                        </div>
+                        <div id="fpl1">
+                            <div id="image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89IoRgxTVypXhFU_078egKZ620W6M2stv0A&usqp=CAU" height="100%" width="100%"/>
+                            </div>
+                            <div id="text">
+                                dinner with friends song
+                                <i class="songlist fa fa-3x fa-play-circle-o" style="float:right;margin-top:15px;" id="4"></i>
+                            </div>
+                        </div>
+                        <div id="fpl1">
+                            <div id="image">
+                                <img src="https://dev-resws-hungamatech-com.storage.googleapis.com/featured_content/e36b5f004dae547e65e3c55e564d13c4_500x500.jpg" height="100%" width="100%"/>
+                            </div>
+                            <div id="text">
+                                dinner with friends song
+                                <i class="songlist fa fa-3x fa-play-circle-o" style="float:right;margin-top:15px;" id="5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bararea">
+                        <div id="current-song">
+                            <div id="current-image">
+                                <img src="https://dev-resws-hungamatech-com.storage.googleapis.com/featured_content/e36b5f004dae547e65e3c55e564d13c4_500x500.jpg" height="100%" width="100%"/>
+                            </div>
+                            <div id="current-songname">
+                                <h5>greedy</h5>
+                                <h5>Tate</h5>
+                            </div>
+                        </div>
+                        <div id="song-status">
+                            <div id="btn-container">
+                                <div id="all-btn">
+                                    <ul>
+                                        <li><i class="fa test fa-2x fa-backward"></i></li>
+                                        <li><i class="fa test fa-2x fa-play" id="pause"></i></li>
+                                        <li><i class="fa test fa-2x fa-forward"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="prograssive-bar">
+                               <span id="start-time">00:00</span><input type="range" id="ranger"/><span id="end-time">05:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const allSong = [
+            {
+                songName:"name0",
+                url:"newSong/song0.mp3",
+                id:"s0"
+            },
+            {
+                songName:"name1",
+                url:"newSong/song1.mp3",
+                id:"s1"
+            },
+            {
+                songName:"name2",
+                url:"newSong/song2.mp3",
+                id:"s2"
+            },
+            {
+                songName:"name3",
+                url:"newSong/Kya Kiya Hain Tune(PagalWorld.com.pe).mp3",
+                id:"s3"
+            },
+            {
+                songName:"name4",
+                url:"newSong/Laute Nahi_192(Ghantalele.com).mp3",
+                id:"s4"
+            },
+            {
+                songName:"name5",
+                url:"newSong/old_Tum Bin - Koi Fariyaad.mp3",
+                id:"s5"
+            }
+        ];
+
+        var startTime = document.getElementById('start-time');
+        var endTime = document.getElementById('end-time');
+        var ranger = document.getElementById('ranger');
+        var pause =  document.getElementById('pause');
+        var songList =  Array.from(document.getElementsByClassName('songlist'));
+
+        var audio = new Audio();
+
+        audio.addEventListener("timeupdate",()=>{
+            var time = parseInt((audio.currentTime/audio.duration)*100);
+            ranger.value = time;
+        });
+        ranger.addEventListener("change",()=>{
+            audio.currentTime = ranger.value*audio.duration/100;
+            
+        });
+        songList.forEach((element)=>{
+            element.addEventListener('click',(e)=>{
+                pause.classList.remove("fa-play");
+                pause.classList.add("fa-pause");
+                var index = e.target.id;
+                audio.src = allSong[index].url;
+                audio.play();
+            })
+        })
+        pause.addEventListener('click',()=>{
+            audio.pause();
+            pause.classList.remove("fa-pause");
+            pause.classList.add("fa-play");
+        })
+
+
+    </script>
+</body>
+</html>
